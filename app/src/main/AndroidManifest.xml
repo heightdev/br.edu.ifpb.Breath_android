@@ -1,0 +1,56 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.ifpb.breath">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name="br.edu.ifpb.breath.CustomApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
+
+        <activity
+            android:name="br.edu.ifpb.breath.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:theme="@style/ToolbarTheme"
+            android:name=".PatientListActivity"
+            android:label="@string/patient_list_title"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:theme="@style/ToolbarTheme"
+            android:name=".NewEditPatientActivity"
+            android:label="@string/new_patient_title"
+            android:parentActivityName=".PatientListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:theme="@style/ToolbarTheme"
+            android:name=".ProfileActivity"
+            android:label="@string/profile_title"
+            android:parentActivityName=".PatientListActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

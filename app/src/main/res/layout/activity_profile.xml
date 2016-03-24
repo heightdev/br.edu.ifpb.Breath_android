@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/blue_regular">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/white_regular"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_name"
+                android:layout_marginTop="68dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textColor="@color/gray_dark"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_age"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_desc"
+                android:layout_marginTop="28dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_marginTop="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/dark_blue_bt_bg"
+                android:text="@string/profile_monitor"
+                android:id="@+id/profile_monitor_bt"
+                android:textColor="@color/white_regular" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/blue_bt_bg"
+                android:text="@string/profile_edit"
+                android:textColor="@color/white_regular"
+                android:id="@+id/profile_edit"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/frag_groups_row_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/default_profile_pic"
+            android:scaleType="fitCenter"
+            android:layout_gravity="top|center_horizontal"
+            app:riv_corner_radius="30dip"
+            app:riv_border_width="4dip"
+            app:riv_border_color="@color/gray_light"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="clamp"
+            app:riv_oval="true"
+            android:layout_marginTop="50dp"/>
+
+    </FrameLayout>
+</ScrollView>

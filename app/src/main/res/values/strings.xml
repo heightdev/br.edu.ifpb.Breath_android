@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Breath</string>
+    <string name="acra_text">Por favor, selecione seu app de e-mail, descreva o erro e envie-nos.</string>
+
+    <!-- MainActivity - Begin /-->
+    <string name="main_title">Breath - MRF</string>
+
+    <array name="main_tabs_titles">
+        <item>Monitor</item>
+    </array>
+    <string name="main_invalid_user">Usuário inválido.</string>
+    <!-- MainActivity - End /-->
+
+
+    <!-- MonitorFragment - BEGIN /-->
+    <string name="monitor_continuous_enabled">Monitoramento contínuo ativado</string>
+    <string name="monitor_continuous_disabled">Monitoramento contínuo desativado</string>
+    <string name="monitor_respiratory_frequency">Frequência respiratória:</string>
+    <string name="monitor_no_data">Aguardando dados...</string>
+    <!-- MonitorFragment - End /-->
+
+
+    <!--PatientListActivity - BEGIN-->
+    <string name="patient_list_no_patients">Nenhum paciente cadastrado</string>
+    <string name="patient_list_title">Pacientes</string>
+    <string name="patient_list_load_failed">Falha ao carregar a lista de pacientes. Tente novamente.</string>
+    <!--PatientListActivity - END-->
+
+    <!-- General Menu - Begin /-->
+    <string name="action_simulate">Simular</string>
+    <string name="action_connect">Conectar</string>
+    <string name="action_disconnect">Desconectar</string>
+    <string name="action_support">Suporte</string>
+    <string name="action_about">Sobre</string>
+
+    <string name="action_remove">Remover</string>
+    <!-- General Menu - End /-->
+
+
+    <!-- NewPatientActivity - Begin /-->
+    <string name="new_patient_title">Adicionar paciente</string>
+    <string name="new_patient_name">Nome do paciente:</string>
+    <string name="new_patient_name_hint">Digite o nome do paciente...</string>
+    <string name="new_patient_reg_code">Código do paciente:</string>
+    <string name="new_patient_reg_code_hint">Digite o código do paciente...</string>
+    <string name="new_patient_age">Idade do paciente:</string>
+    <string name="new_patient_age_hint">Digite a idade do paciente...</string>
+    <string name="new_patient_procedures">Procedimentos realizados:</string>
+    <string name="new_patient_procedures_hint">Descreva os procedimentos realizados com o paciente...</string>
+    <string name="new_patient_surgeries">Cirurgias realizadas:</string>
+    <string name="new_patient_surgeries_hint">Descreva as cirurgias realizadas com o paciente...</string>
+    <string name="new_patient_required_precautions">Necessitou de precauções?</string>
+    <string name="new_patient_additional_info">Informações adicionais:</string>
+    <string name="new_patient_additional_info_hint">Descreva informações adicionais...</string>
+    <string name="new_patient_add">Adicionar</string>
+
+    <string name="new_patient_invalid_name">Nome inválido!</string>
+    <string name="new_patient_invalid_age">Idade inválida!</string>
+    <string name="new_patient_successfully_created">Paciente criado com sucesso!</string>
+
+    <string name="new_patient_invalid_user">Usuário inválido!</string>
+    <string name="new_patient_save">Salvar</string>
+    <string name="new_patient_edit_title">Editar paciente</string>
+    <string name="new_patient_successfully_saved">Pacientes salvo com sucesso!</string>
+    <!-- NewPatientActivity - End /-->
+
+
+    <!-- AboutDialog - Begin /-->
+    <string name="about_title">Sobre</string>
+    <string name="about_description">
+        <Data><![CDATA[
+        <p>O projeto <i>Breath</i> implementa um sensor de frequência respiratória que trabalha em conjunto com
+        este aplicativo <i>Android</i>, por meio de comunicação <i>Bluetooth</i>.
+        <p>Orientador:</p>
+        - Prof. Pedro Victor Eugênio de Souza<br/>
+        <p>Alunos:</p>
+        - Anna Kamylla Dantas Marques<br/>
+        - Felipe Porge Xavier (Android Dev)<br/>
+        - Rafael Guerra de Pontes<br/>
+        - Matheus Souza Onofre<br/>
+        <p>© Copyright 2016 - Todos os direitos reservados.</p>
+        ]]> </Data>
+    </string>
+    <!-- AboutDialog - End /-->
+
+    <!-- ProfileActivity - BEGIN /-->
+    <string name="profile_title">Perfil</string>
+    <string name="profile_monitor">Monitorar</string>
+    <string name="profile_edit">Alterar dados</string>
+    <string name="profile_invalid_user">Usuário inválido!</string>
+    <string name="profile_remove_confirm">Tem certeza que quer remover o paciente?</string>
+    <string name="profile_sucessfully_removed">Paciente removido com sucesso.</string>
+    <string name="profile_remove_yes">Remover</string>
+    <string name="profile_remove_no">Cancelar</string>
+    <string name="profile_reg_code">Código de registro:</string>
+    <string name="profile_required_precautions">Necessitou precauções?</string>
+    <string name="profile_procedures">Procedimentos realizados:</string>
+    <string name="profile_surgeries">Cirurgias realizadas:</string>
+    <string name="profile_additional_info">Informações adicionais:</string>
+    <string name="profile_yes">Sim</string>
+    <string name="profile_no">Não</string>
+    <!-- ProfileActivity - END /-->
+
+    <!--Patient Item - BEGIN-->
+    <string name="patient_item_year">ano</string>
+    <string name="patient_item_years">anos</string>
+    <!--Patient Item - END-->
+
+    <!-- SupportAction - Begin /-->
+    <string name="support_email">contact@felipeporge.com</string>
+    <string name="support_subject">Breath - Suporte/Feedback</string>
+    <string name="support_body">Digite aqui sua mensagem...</string>
+    <!-- SupportAction - End /-->
+
+    <!-- Bluetooth Connection - Begin /-->
+    <string name="connect_bt_title">Conectar</string>
+    <string name="connect_bt_search">Procurar</string>
+    <string name="connect_bt_device_not_found">Dispositivo não encontrado</string>
+    <string name="connect_bt_no_bluetooth_adapter">O dispositivo não tem Bluetooth</string>
+    <string name="connect_bt_connection_error">Falha ao tentar estabelecer a conexão Bluetooth</string>
+    <string name="connect_bt_try_again_after_pair">Tente novamente após parear os dispositivos</string>
+    <string name="connect_bt_need_to_connect">É necessário ativar o Bluetooth para estabelecer uma conexão</string>
+    <string name="connect_bt_connecting_message">Estabelecendo conexão...</string>
+    <string name="connect_bt_connected_with">Conectado com</string>
+    <string name="connect_bt_disconnected">Desconectado</string>
+    <!-- Bluetooth Connection - End /-->
+
+</resources>

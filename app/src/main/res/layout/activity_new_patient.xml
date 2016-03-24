@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_patient_name_hint"
+            android:id="@+id/new_patient_name"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="@drawable/white_off_shape"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:inputType="textPersonName"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_reg_code"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_patient_reg_code_hint"
+            android:id="@+id/new_patient_reg_code"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="@drawable/white_off_shape"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_age"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_patient_age_hint"
+            android:id="@+id/new_patient_age"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="@drawable/white_off_shape"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_procedures"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_patient_procedures_hint"
+            android:id="@+id/new_patient_procedures"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:background="@drawable/white_off_shape"
+            android:layout_marginTop="4dp"
+            android:maxLines="5"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_surgeries"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_patient_surgeries_hint"
+            android:id="@+id/new_patient_surgeries"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:maxLines="5"
+            android:lines="5"
+            android:background="@drawable/white_off_shape"
+            android:layout_marginTop="4dp"
+            android:gravity="left"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_required_precautions"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/gray_dark"
+            android:id="@+id/new_patient_required_precautions"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_patient_additional_info"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_patient_additional_info_hint"
+            android:id="@+id/new_patient_additional_info"
+            android:textSize="14sp"
+            android:padding="8dp"
+            android:maxLines="5"
+            android:background="@drawable/white_off_shape"
+            android:layout_marginTop="4dp"
+            android:gravity="left"
+            android:lines="5"
+            android:layout_marginBottom="18dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/blue_bt_bg"
+            android:text="@string/new_patient_add"
+            android:textColor="@color/white_regular"
+            android:id="@+id/new_patient_add"/>
+
+    </LinearLayout>
+</ScrollView>
