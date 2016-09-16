@@ -28,7 +28,7 @@ The Breath app was designed to interface to the monitoring of respiratory rate o
 
 The application connects via Bluetooth with the sensor and then waits String values that follow the JSON standard with the fields "frequency" (integer) and "amplitude" (integer). As usual data acquisition systems have floating point values, the application will use the value of the amplitude field divided by 10, so to display a range of 5 to the application chart, you should be sent 50.
 
-Example of String to be sent: { "width": 50, "frequency": 120}
+Example of String to be sent: { "amplitude": 50, "frequency": 120}
 
 - For developers / scholars:
 
